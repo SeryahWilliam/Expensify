@@ -1,0 +1,111 @@
+/* .App {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  margin: 20px;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+}
+
+button {
+  margin: 10px;
+  padding: 5px 10px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} */
+
+body {
+  background-color: #f5fffa; /* Mint color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  position: relative;
+}
+
+.App {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+h1 {
+  color: #2e8b57; /* Darker mint color */
+  font-size: 2.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #2e8b57;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  background-color: #2e8b57;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #276848;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #2e8b57;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px; /* Increase the width */
+}
+
+.expense-item span,
+.expense-item input {
+  flex: 1;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.expense-item input {
+  padding: 5px;
+}

@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from "react";
-import ExpenseReducer from "./ExpenseReducer";
+import expenseReducer from "./ExpenseReducer";
 
 const initialState = {
   expenses: [],
@@ -8,7 +8,7 @@ const initialState = {
 export const ExpenseContext = createContext(initialState);
 
 export const ExpenseProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(ExpenseReducer, initialState);
+  const [state, dispatch] = useReducer(expenseReducer, initialState);
 
   const addExpense = (expense) => {
     dispatch({ type: "ADD_EXPENSE", payload: expense });
